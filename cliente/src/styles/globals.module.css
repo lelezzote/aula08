@@ -1,3 +1,63 @@
-input:focus{
- outline:none;
+/* CSS para estilizar a tabela */
+table{
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px; /* Limita a largura da tabela */
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;  /* Remove o espaçamento entre as células */
+  font-family: 'Arial', sans-serif;
+}
+
+th, td {
+  padding: 12px 15px;  /* Espaçamento interno das células */
+  text-align: left;  /* Alinha o texto à esquerda */
+  border-bottom: 1px solid #ddd;  /* Borda suave nas células */
+}
+
+th {
+  background-color: #4CAF50;  /* Cor de fundo do cabeçalho */
+  color: white;  /* Cor do texto no cabeçalho */
+  font-weight: bold;  /* Deixa o texto mais destacado */
+}
+
+/* Cor alternada para as linhas de dados */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;  /* Cor de fundo para linhas pares */
+}
+
+/* Efeito de hover nas linhas da tabela */
+tbody tr:hover {
+  background-color: #ddd;  /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do botão de exclusão */
+.delete-button {
+  background-color: #e74c3c;  /* Cor de fundo vermelha */
+  color: white;  /* Cor do texto do botão */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;  /* Cor de fundo ao passar o mouse */
+}
+
+/* Responsividade - Para telas pequenas */
+@media (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px 10px;
+  }
 }
