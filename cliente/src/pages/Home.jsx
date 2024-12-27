@@ -6,20 +6,20 @@ import {Button} from "@mui/material";
                  
 export default function Home() {
 
-  const [usuarios, setUsuarios] = useState([]);
+  const [roupas, setRoupas] = useState([]);
 
   useEffect(() => {
-    const buscarUsuario = async () => {
+    const buscarRoupas = async () => {
       try {
-        const resposta = await fetch("http://localhost:3000/usuarios");
+        const resposta = await fetch("http://localhost:3000/roupas");
         const dados = await resposta.json();
-        setUsuarios(dados);
+        setRoupas(dados);
       } catch {
         alert('Ocorreu um erro no app!');
       }
     }
-    buscarUsuario();
-  }, [usuarios])
+    buscarRoupas();
+  }, [roupas])
 
   const remover = async (id) => {
     try{
@@ -33,10 +33,10 @@ export default function Home() {
 
   const exportarPDF = () => {
     const doc = new jsPDF();
-    const tabelaDados = usuarios.map((usuario) => [
-      usuario.id,
-      usuario.nome,
-      usuario.email,
+    const tabelaDados = roupas.map((roupa) => [
+      roupa.id,
+      roupa.nome,
+      roupa.email,
     ])
 
     doc.text("Lista de Usuários", 10, 10);
@@ -50,19 +50,19 @@ export default function Home() {
 
   return (
     <div>
-      <Button variant="outlined" onClick={() => exportarPDF()}> Gerar PDF</Button>
+      <Button variant="outlined" onClick={() => exportarPDF()}> Gerar PDF </Button>
     
     <table>
       <tr>
         <td>Nome</td>
         <td>E-mail</td>
       </tr>
-      {usuarios.map((usuario) =>
-        <tr key={usuario.id}>
-          <td>{usuario.nome}</td>
-          <td>{usuario.email}</td>
-          <td> <button onClick={() => remover(usuario.id)}>🗑️</button> </td>
-          <Link to={'/alterar/' + usuario.id}>
+      {roupas.map((roupa) =>
+        <tr key={roupa.id}>
+          <td>{roupa.nome}</td>
+          <td>{roupa.email}</td>
+          <td> <button onClick={() => remover(roupa.id)}>🗑️</button> </td>
+          <Link to={'/alterar/' + roupa.id}>
           <button>Alterar</button>
           </Link>
         </tr>

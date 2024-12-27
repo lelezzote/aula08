@@ -5,7 +5,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-let usuarios = [   {
+let roupas = [   {
 
     id: 1,
 
@@ -21,7 +21,9 @@ let usuarios = [   {
 
     categoria: "Promoção",
 
-    preco: "Preço: R$ 19,00"
+    preco: "Preço: R$ 19,00",
+
+    marca: "Palmeira"
 
 },
 
@@ -40,7 +42,9 @@ let usuarios = [   {
 
     categoria: "Promoção",
 
-    preco: "Preço: R$ 29,90"
+    preco: "Preço: R$ 29,90",
+
+    marca: "Flamingo"
 
 },
 
@@ -58,7 +62,9 @@ let usuarios = [   {
 
     categoria: "Verão",
 
-    preco: "Preço: R$ 21,90"
+    preco: "Preço: R$ 21,90",
+
+    marca: "Entalpia"
 
 },
 
@@ -76,7 +82,9 @@ let usuarios = [   {
 
     categoria: "Promoção",
 
-    preco: "Preço: R$ 21,99"
+    preco: "Preço: R$ 21,99",
+
+    marca: "Farmo"
 
 },
 
@@ -93,7 +101,9 @@ let usuarios = [   {
 
     categoria: "Verão",
 
-    preco: "Preço: R$ 41,90"
+    preco: "Preço: R$ 41,90",
+
+    marca: "Zere"
 
 },
 
@@ -112,7 +122,7 @@ let usuarios = [   {
 
     preco: "Preço: R$ 69,90",
 
-    marca: "Zandrade"
+    marca: "Supra"
 
 },
 
@@ -148,7 +158,9 @@ let usuarios = [   {
 
     categoria: "Verão",
 
-    preco: "Preço: R$ 52,00"
+    preco: "Preço: R$ 52,00",
+
+    marca: "Crisonline"
 
 },
 
@@ -173,59 +185,59 @@ let usuarios = [   {
 
 ]
 
-app.post('/usuarios', (req, res) => {
+app.post('/roupas', (req, res) => {
     const { nome, email } = req.body;
     
     if (!nome || !email) {
         return res.status(400).json({ erro: 'Nome e email são obrigatórios' });
     }
 
-    const novoUsuario = { id: usuarios.length + 1, nome, email };
-    usuarios.push(novoUsuario);
+    const novoRoupa = { id: roupas.length + 1, nome, email };
+    roupas.push(novoRoupa);
     
-    res.status(201).json(novoUsuario);
+    res.status(201).json(novoRoupa);
 });
 
-app.get('/usuarios', (req, res) => {
-    res.status(200).json(usuarios);
+app.get('/roupas', (req, res) => {
+    res.status(200).json(roupas);
 });
 
-app.get('/usuarios/:id', (req, res) => {
+app.get('/roupas/:id', (req, res) => {
     const { id } = req.params;
-    const usuario = usuarios.find(u => u.id === parseInt(id));
+    const roupa = roupas.find(u => u.id === parseInt(id));
     
-    if (!usuario) {
-        return res.status(404).json({ erro: 'Usuário não encontrado' });
+    if (!roupa) {
+        return res.status(404).json({ erro: 'Roupa não encontrado' });
     }
     
-    res.status(200).json(usuario);
+    res.status(200).json(roupa);
 });
 
-app.put('/usuarios/:id', (req, res) => {
+app.put('/roupas/:id', (req, res) => {
     const { id } = req.params;
     const { nome, email } = req.body;
     
-    const usuario = usuarios.find(u => u.id === parseInt(id));
+    const roupa = roupas.find(u => u.id === parseInt(id));
     
-    if (!usuario) {
+    if (!roupa) {
         return res.status(404).json({ erro: 'Usuário não encontrado' });
     }
     
-    usuario.nome = nome || usuario.nome;
-    usuario.email = email || usuario.email;
+    roupa.nome = nome || roupa.nome;
+    roupa.email = email || roupa.email;
     
-    res.status(200).json(usuario);
+    res.status(200).json(roupa);
 });
 
-app.delete('/usuarios/:id', (req, res) => {
+app.delete('/roupas/:id', (req, res) => {
     const { id } = req.params;
-    const index = usuarios.findIndex(u => u.id === parseInt(id));
+    const index = roupas.findIndex(u => u.id === parseInt(id));
     
     if (index === -1) {
         return res.status(404).json({ erro: 'Usuário não encontrado' });
     }
     
-    usuarios.splice(index, 1);
+    roupas.splice(index, 1);
     res.status(204).send();
 });
 
