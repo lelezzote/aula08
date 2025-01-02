@@ -13,15 +13,15 @@ let roupas = [   {
 
     imagem: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.shein.com%2FSHEIN-ICON-Women-s-Spliced-Lace-Camisole-Tank-Top-p-27405945.html&psig=AOvVaw1YaUs1p3-S1H0KENBEq3e3&ust=1734458586391000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCV8fDvrIoDFQAAAAAdAAAAABAv",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Preto",
 
     categoria: "Promoção",
 
-    preco: "Preço: R$ 19,00",
+    preco: "R$ 19,00",
 
     marca: "Palmeira"
 
@@ -34,15 +34,15 @@ let roupas = [   {
 
     imagem: "https://m.media-amazon.com/images/I/31BaPxr3CVL._AC_SY1000_.jpg",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Branco",
 
     categoria: "Promoção",
 
-    preco: "Preço: R$ 29,90",
+    preco: "R$ 29,90",
 
     marca: "Flamingo"
 
@@ -54,15 +54,15 @@ let roupas = [   {
 
     imagem: "https://photos.enjoei.com.br/cropped-lilas-shein-96792815/800x800/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8zNjE1MTg3OC81OTJlMDM4YmZiZDVkNjAzZWEwNzhkYzUxNTZhYTJiYS5qcGc",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Lilás",
 
     categoria: "Verão",
 
-    preco: "Preço: R$ 21,90",
+    preco: "R$ 21,90",
 
     marca: "Entalpia"
 
@@ -74,15 +74,15 @@ let roupas = [   {
 
     imagem: "https://m.media-amazon.com/images/I/51dARXqaBHL._AC_SX569_.jpg",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Branco",
 
     categoria: "Promoção",
 
-    preco: "Preço: R$ 21,99",
+    preco: "R$ 21,99",
 
     marca: "Farmo"
 
@@ -93,15 +93,15 @@ let roupas = [   {
 
     imagem: "https://img.ltwebstatic.com/images3_pi/2024/03/12/19/171023460157e6c89bbe4ae52c6f7a7774ce10191e_thumbnail_720x.webp",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Rosa",
 
     categoria: "Verão",
 
-    preco: "Preço: R$ 41,90",
+    preco: "R$ 41,90",
 
     marca: "Zere"
 
@@ -112,15 +112,15 @@ let roupas = [   {
 
     imagem: "https://img01.ztat.net/article/spp-media-p1/83c92a636ce44b94bf00347adb31e87b/e4796f8b458d4bf5838ee4487dab7597.jpg?imwidth=762&filter=packshot",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Branco",
 
     categoria: "Promoção",
 
-    preco: "Preço: R$ 69,90",
+    preco: "R$ 69,90",
 
     marca: "Supra"
 
@@ -131,15 +131,15 @@ let roupas = [   {
 
   imagem: "https://img.ltwebstatic.com/images3_pi/2024/03/15/f5/171049348267b565b123f07a444dbd2ddc274f521b_thumbnail_750x999.jpg",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Jeans",
 
     categoria: "Verão",
 
-    preco: "Preço: R$ 49,90",
+    preco: "R$ 49,90",
 
     marca: "Julenee"
 
@@ -150,15 +150,15 @@ let roupas = [   {
 
   imagem: "https://img.ltwebstatic.com/images3_pi/2023/08/25/b6/1692943533c864a9dc131725c29166d12eb9529f7e_thumbnail_720x.webp",
 
-    tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+    tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"Composição: 100% Algodão",
+    composicao:"100% Algodão",
 
     cor: "Roxa",
 
     categoria: "Verão",
 
-    preco: "Preço: R$ 52,00",
+    preco: "R$ 52,00",
 
     marca: "Crisonline"
 
@@ -169,15 +169,15 @@ let roupas = [   {
 
   imagem: "https://m.media-amazon.com/images/I/519GCAws2AL._AC_SY1000_.jpg",
 
-  tamanho:["Tamanho: PP-P-M-G-GG-XGG"],
+  tamanho:["PP-P-M-G-GG-XGG"],
 
-  composicao:"Composição: 100% Algodão",
+  composicao:"100% Algodão",
 
   cor: "Jeans",
 
   categoria: "Promoção",
 
-  preco: "Preço: R$ 59,90",
+  preco: "R$ 59,90",
 
   marca: "Zandrade"
 
@@ -186,17 +186,27 @@ let roupas = [   {
 ]
 
 app.post('/roupas', (req, res) => {
-    const { nome, email } = req.body;
+    const { item, imagem, tamanho, composicao, cor, categoria, preco, marca } = req.body;
     
-    if (!nome || !email) {
-        return res.status(400).json({ erro: 'Nome e email são obrigatórios' });
+    if (!item || !imagem || !tamanho || !composicao || !cor || !categoria || !preco || !marca) {
+        return res.status(400).json({ erro: 'Todos os campos são obrigatórios.' });
     }
 
-    const novoRoupa = { id: roupas.length + 1, nome, email };
+    const novoRoupa = { 
+        id: roupas.length + 1, 
+        item, 
+        imagem, 
+        tamanho, 
+        composicao, 
+        cor, 
+        categoria, 
+        preco, 
+        marca 
+    };
     roupas.push(novoRoupa);
-    
     res.status(201).json(novoRoupa);
 });
+
 
 app.get('/roupas', (req, res) => {
     res.status(200).json(roupas);
@@ -207,7 +217,7 @@ app.get('/roupas/:id', (req, res) => {
     const roupa = roupas.find(u => u.id === parseInt(id));
     
     if (!roupa) {
-        return res.status(404).json({ erro: 'Roupa não encontrado' });
+        return res.status(404).json({ erro: 'Roupa não encontrada' });
     }
     
     res.status(200).json(roupa);
@@ -220,11 +230,17 @@ app.put('/roupas/:id', (req, res) => {
     const roupa = roupas.find(u => u.id === parseInt(id));
     
     if (!roupa) {
-        return res.status(404).json({ erro: 'Usuário não encontrado' });
+        return res.status(404).json({ erro: 'Roupa não encontrada' });
     }
     
-    roupa.nome = nome || roupa.nome;
-    roupa.email = email || roupa.email;
+    roupa.item = item || roupa.item;
+    roupa.imagem = imagem || roupa.imagem;
+    roupa.tamanho = tamanho || roupa.tamanho;
+    roupa.composicao = composicao || roupa.composicao;
+    roupa.cor = cor || roupa.cor;
+    roupa.categoria = categoria || roupa.categoria;
+    roupa.preco = preco || roupa.preco;
+    roupa.marca = marca || roupa.marca;
     
     res.status(200).json(roupa);
 });
@@ -234,7 +250,7 @@ app.delete('/roupas/:id', (req, res) => {
     const index = roupas.findIndex(u => u.id === parseInt(id));
     
     if (index === -1) {
-        return res.status(404).json({ erro: 'Usuário não encontrado' });
+        return res.status(404).json({ erro: 'Roupa não encontrada' });
     }
     
     roupas.splice(index, 1);

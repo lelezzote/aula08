@@ -23,7 +23,7 @@ export default function Home() {
 
   const remover = async (id) => {
     try{
-       await fetch('http://localhost:3000/usuarios/' + id, {
+       await fetch('http://localhost:3000/roupas/' + id, {
          method: 'DELETE'
        });
     }catch{
@@ -35,17 +35,23 @@ export default function Home() {
     const doc = new jsPDF();
     const tabelaDados = roupas.map((roupa) => [
       roupa.id,
-      roupa.nome,
-      roupa.email,
+      roupa.item,
+      roupa.imagem,
+      roupa.tamanho,
+      roupa.composicao,
+      roupa.cor,
+      roupa.categoria,
+      roupa.preco,
+      roupa.marca
     ])
 
-    doc.text("Lista de Usuários", 10, 10);
+    doc.text("Lista de Roupas", 10, 10);
     doc.autoTable({
-      head: [["ID", "Nome", "E-mail"]],
+      head: [["ID", "Item", "Imagem", "Tamanho", "Composicao", "Cor", "Categoria", "Preco", "Marca"]],
       body: tabelaDados,
     });
 
-    doc.save("alunosIFMS.pdf");
+    doc.save("lojaDeRoupas.pdf");
   };
 
   return (
@@ -59,8 +65,14 @@ export default function Home() {
       </tr>
       {roupas.map((roupa) =>
         <tr key={roupa.id}>
-          <td>{roupa.nome}</td>
-          <td>{roupa.email}</td>
+          <td>{roupa.item}</td>
+          <td>{roupa.imagem}</td>
+          <td>{roupa.tamanho}</td>
+          <td>{roupa.composicao}</td>
+          <td>{roupa.cor}</td>
+          <td>{roupa.categoria}</td>
+          <td>{roupa.preco}</td>
+          <td>{roupa.marca}</td>
           <td> <button onClick={() => remover(roupa.id)}>🗑️</button> </td>
           <Link to={'/alterar/' + roupa.id}>
           <button>Alterar</button>
