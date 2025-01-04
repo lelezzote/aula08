@@ -9,7 +9,7 @@ let roupas = [   {
 
     id: 1,
 
-    item: "Cropped",
+    item: "Camisa",
 
     imagem: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.shein.com%2FSHEIN-ICON-Women-s-Spliced-Lace-Camisole-Tank-Top-p-27405945.html&psig=AOvVaw1YaUs1p3-S1H0KENBEq3e3&ust=1734458586391000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCV8fDvrIoDFQAAAAAdAAAAABAv",
 
@@ -52,6 +52,8 @@ let roupas = [   {
 
     id: 3,
 
+    item: "Cropped",
+
     imagem: "https://photos.enjoei.com.br/cropped-lilas-shein-96792815/800x800/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8zNjE1MTg3OC81OTJlMDM4YmZiZDVkNjAzZWEwNzhkYzUxNTZhYTJiYS5qcGc",
 
     tamanho:["PP-P-M-G-GG-XGG"],
@@ -72,6 +74,8 @@ let roupas = [   {
 
     id: 4,
 
+    item: "Cropped",
+
     imagem: "https://m.media-amazon.com/images/I/51dARXqaBHL._AC_SX569_.jpg",
 
     tamanho:["PP-P-M-G-GG-XGG"],
@@ -90,6 +94,8 @@ let roupas = [   {
 
 {
     id:5,
+
+    item:"Cropped",
 
     imagem: "https://img.ltwebstatic.com/images3_pi/2024/03/12/19/171023460157e6c89bbe4ae52c6f7a7774ce10191e_thumbnail_720x.webp",
 
@@ -129,6 +135,8 @@ let roupas = [   {
 {
   id:7,
 
+  item:"Short",
+
   imagem: "https://img.ltwebstatic.com/images3_pi/2024/03/15/f5/171049348267b565b123f07a444dbd2ddc274f521b_thumbnail_750x999.jpg",
 
     tamanho:["PP-P-M-G-GG-XGG"],
@@ -166,6 +174,8 @@ let roupas = [   {
 
 {
   id:9,
+
+  item:"",
 
   imagem: "https://m.media-amazon.com/images/I/519GCAws2AL._AC_SY1000_.jpg",
 
