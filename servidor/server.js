@@ -179,12 +179,8 @@ let roupas = [   {
 {
   id:9,
 
-<<<<<<< HEAD
   item:"Saia Jeans",
-=======
-  item:"",
->>>>>>> 677376c139e6f00cc0be328f3801615214c9795e
-
+  
   imagem: "https://m.media-amazon.com/images/I/519GCAws2AL._AC_SY1000_.jpg",
 
   tamanho:["PP-P-M-G-GG-XGG"],
