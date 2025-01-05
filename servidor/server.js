@@ -15,13 +15,13 @@ let roupas = [   {
 
     tamanho:["PP-P-M-G-GG-XGG"],
 
-    composicao:"100% Algodão",
+    composicao:"100% Linho",
 
-    cor: "Preto",
+    cor: "Branco",
 
     categoria: "Promoção",
 
-    preco: "R$ 19,00",
+    preco: "R$ 999,00",
 
     marca: "Palmeira"
 
