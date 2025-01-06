@@ -25,17 +25,17 @@ export default function Home() {
     buscarRoupas();
   }, []);
 
+
   const remover = async (id) => {
-    try {
-      await fetch("http://localhost:3000/roupas/" + id, {
-        method: "DELETE",
-      });
-      
-      setRoupas((prev) => prev.filter((roupa) => roupa.id !== id));
-    } catch (error) {
-      console.error("Erro ao remover:", error);
+    try{
+       await fetch('http://localhost:3000/roupas/' + id, {
+         method: 'DELETE'
+       });
+    }catch{
+      alert("Eita, deu erro! 😞")
     }
-  };
+  }
+
 
   const exportarPDF = () => {
     const doc = new jsPDF();
