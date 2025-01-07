@@ -5,8 +5,8 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import ListaProdutos from "../components/ListaProdutos";
 import Loading from "../components/Loading";
-
-
+import Footer from "../components/Footer";
+                    
 
 
 export default function Home() {
@@ -72,6 +72,7 @@ export default function Home() {
         Gerar PDF
       </Button>
    <ListaProdutos produtos={roupas} remover={remover}/>
+   <Footer/>
     </div>
     
   );
