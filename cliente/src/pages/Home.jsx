@@ -12,18 +12,14 @@ export default function Home() {
     const buscarRoupas = async () => {
       try {
         const resposta = await fetch("http://localhost:3000/roupas");
-        if (resposta.ok) {
-          const dados = await resposta.json();
-          setRoupas(dados);
-        } else {
-          console.error("Erro ao buscar roupas: ", resposta.status);
-        }
-      } catch (error) {
-        console.error("Erro na comunicação com o servidor:", error);
+        const dados = await resposta.json();
+        setRoupas(dados);
+      } catch {
+        alert('Ocorreu um erro no app!');
       }
-    };
+    }
     buscarRoupas();
-  }, []);
+  }, [])
 
 
   const remover = async (id) => {
@@ -61,7 +57,7 @@ export default function Home() {
   };
 
   if (roupas.length === 0) {
-    return <p>Carregando roupas...</p>;
+    return <Loading/>
   }
 
   return (
