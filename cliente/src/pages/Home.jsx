@@ -4,6 +4,10 @@ import "jspdf-autotable";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import ListaProdutos from "../components/ListaProdutos";
+import Loading from "../components/Loading";
+
+
+
 
 export default function Home() {
   const [roupas, setRoupas] = useState([]);
@@ -23,14 +27,16 @@ export default function Home() {
 
 
   const remover = async (id) => {
-    try{
-       await fetch('http://localhost:3000/roupas/' + id, {
-         method: 'DELETE'
-       });
-    }catch{
-      alert("Eita, deu erro! 😞")
+    try {
+      await fetch("http://localhost:3000/roupas/" + id, {
+        method: "DELETE",
+      });
+      
+      setRoupas((prev) => prev.filter((roupa) => roupa.id !== id));
+    } catch (error) {
+      console.error("Erro ao remover:", error);
     }
-  }
+  };
 
 
   const exportarPDF = () => {
@@ -67,5 +73,6 @@ export default function Home() {
       </Button>
    <ListaProdutos produtos={roupas} remover={remover}/>
     </div>
+    
   );
 }
