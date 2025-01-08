@@ -68,6 +68,7 @@ export default function Home() {
 
   return (
     <div>
+     
       <Button variant="outlined" onClick={() => exportarPDF()}>
         Gerar PDF
       </Button>

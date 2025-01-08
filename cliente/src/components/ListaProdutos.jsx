@@ -1,34 +1,31 @@
 import React from "react";
 import styles from '../styles/listaProdutos.module.css';
 
-
 export default function ListaProdutos({ produtos, remover }) {
   return (
-    <div className="productList">
-  {produtos.map((produto) => (
-    <div className="productCard" key={produto.id}>
-      <img 
-        className="productImage" 
-        src={produto.imagem} 
-        alt={produto.item} 
-      />
-      <h3 className="productTitle">{produto.item}</h3>
-      <p className="productDetail"><strong>Tamanho:</strong> {produto.tamanho}</p>
-      <p className="productDetail"><strong>Composição:</strong> {produto.composicao}</p>
-      <p className="productDetail"><strong>Cor:</strong> {produto.cor}</p>
-      <p className="productDetail"><strong>Categoria:</strong> {produto.categoria}</p>
-      <p className="productDetail"><strong>Preço:</strong> {produto.preco}</p>
-      <p className="productDetail"><strong>Marca:</strong> {produto.marca}</p>
-      <div className="buttonGroup">
-      <button onClick={() => remover(produto.id)}>
+    <div className={styles.produtoLista}>
+      {produtos.map((produto) => (
+        <div className={styles.produtoCard} key={produto.id}>
+          <img 
+            className={styles.image} 
+            src={produto.imagem} 
+            alt={produto.item} 
+          />
+          <h2 className={styles.produtoTitulo}>{produto.item}</h2>
+          <p className={styles.produtoInfo}><strong>Tamanho:</strong> {produto.tamanho}</p>
+          <p className={styles.produtoInfo}><strong>Composição:</strong> {produto.composicao}</p>
+          <p className={styles.produtoInfo}><strong>Cor:</strong> {produto.cor}</p>
+          <p className={styles.produtoInfo}><strong>Categoria:</strong> {produto.categoria}</p>
+          <p className={styles.produtoInfo}><strong>Preço:</strong> {produto.preco}</p>
+          <p className={styles.produtoInfo}><strong>Marca:</strong> {produto.marca}</p>
+          <div className={styles.buttonGroup}>
+            <button className={styles.buttonRemover} onClick={() => remover(produto.id)}>
               🗑️ Remover
             </button>
-        <button className="alterButton">Alterar</button>
-      </div>
+            <button className={styles.buttonAlterar}>Alterar</button>
+          </div>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-
   );
 }
-
