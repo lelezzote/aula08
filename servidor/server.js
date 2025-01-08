@@ -11,7 +11,7 @@ let roupas = [   {
 
     item: "Camisa",
 
-    imagem: "https://i.pinimg.com/736x/3f/b6/00/3fb600bc05bd2d6ea32630077c12d933.jpg",
+    imagem: "https://m.media-amazon.com/images/I/61lxy8H1RoL._AC_SX679_.jpg",
 
     tamanho:["PP-P-M-G-GG-XGG"],
 
