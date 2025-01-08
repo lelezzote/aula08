@@ -181,7 +181,7 @@ let roupas = [   {
 
   item:"Saia Jeans",
   
-  imagem: "https://m.media-amazon.com/images/I/519GCAws2AL._AC_SY1000_.jpg",
+  imagem: "",
 
   tamanho:["PP-P-M-G-GG-XGG"],
 

@@ -1,0 +1,35 @@
+.navbar-ader{
+    display: flex;
+    align-items: center;
+    height: 90px;
+  }
+
+  .navbar-menu{
+    display: flex;
+    margin-left: 70px ;
+  }
+  .navbar-menu li {
+    cursor: pointer;
+    padding:5px 20px;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: 25px;
+    color: black;
+
+  }
+  .navbar-menu li:hover{
+    transform:  scaleX(1.05);
+    
+  }
+
+  .navbar{
+    background-color: #fff;
+    color: black;
+    display: flexbox;
+    justify-content: space-between;
+  }
+
+  .logo-nav{
+    width: 50px;
+    height: 35px;
+  }

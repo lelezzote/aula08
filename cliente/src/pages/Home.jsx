@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ListaProdutos from "../components/ListaProdutos";
 import Loading from "../components/Loading";
 import Footer from "../components/Footer";
-                    
+import Header from "../components/Header" ;
 
 
 export default function Home() {
@@ -68,7 +68,7 @@ export default function Home() {
 
   return (
     <div>
-     
+     <Header/>
       <Button variant="outlined" onClick={() => exportarPDF()}>
         Gerar PDF
       </Button>
