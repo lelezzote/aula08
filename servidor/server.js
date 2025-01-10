@@ -21,7 +21,7 @@ let roupas = [   {
 
     categoria: "Promoção",
 
-    preco: "R$ 999,00",
+    preco: 999,
 
     marca: "Palmeira"
 
@@ -42,7 +42,7 @@ let roupas = [   {
 
     categoria: "Promoção",
 
-    preco: "R$ 29,90",
+    preco: 29,
 
     marca: "Flamingo"
 
@@ -64,7 +64,7 @@ let roupas = [   {
 
     categoria: "Verão",
 
-    preco: "R$ 21,90",
+    preco:  21,
 
     marca: "Entalpia"
 
@@ -86,7 +86,7 @@ let roupas = [   {
 
     categoria: "Promoção",
 
-    preco: "R$ 21,99",
+    preco: 21,
 
     marca: "Farmo"
 
@@ -107,7 +107,7 @@ let roupas = [   {
 
     categoria: "Verão",
 
-    preco: "R$ 41,90",
+    preco:  41,
 
     marca: "Zere"
 
@@ -128,7 +128,7 @@ let roupas = [   {
 
     categoria: "Promoção",
 
-    preco: "R$ 69,90",
+    preco:  69,
 
     marca: "Supra"
 
@@ -149,7 +149,7 @@ let roupas = [   {
 
     categoria: "Verão",
 
-    preco: "R$ 49,90",
+    preco:  49,
 
     marca: "Julenee"
 
@@ -170,7 +170,7 @@ let roupas = [   {
 
     categoria: "Verão",
 
-    preco: "R$ 52,00",
+    preco:  52,
 
     marca: "Crisonline"
 
@@ -191,7 +191,7 @@ let roupas = [   {
 
   categoria: "Promoção",
 
-  preco: "R$ 59,90",
+  preco: 59,
 
   marca: "Zandrade"
 

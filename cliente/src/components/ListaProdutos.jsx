@@ -22,7 +22,6 @@ export default function ListaProdutos({ produtos, remover }) {
             <button className={styles.buttonRemover} onClick={() => remover(produto.id)}>
               🗑️ Remover
             </button>
-            <button className={styles.buttonAlterar}>Alterar</button>
           </div>
         </div>
       ))}

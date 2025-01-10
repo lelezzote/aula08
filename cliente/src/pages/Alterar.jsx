@@ -5,5 +5,6 @@ export default function Alterar () {
 
     return(
         <h1>Página Alterar {id}</h1>
+        
     )
-}
+};

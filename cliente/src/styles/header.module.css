@@ -77,3 +77,54 @@
 .search button i {
   font-size: 20px; 
 }
+
+/* Container do ícone de filtro */
+.filters {
+  position: relative; /* Necessário para o posicionamento absoluto do menu de filtros */
+}
+
+/* O ícone de filtros */
+.filters .icon {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* O menu de filtros (ficará oculto até o hover) */
+.filters .filterOptions {
+  display: none; /* Fica oculto por padrão */
+  position: absolute;
+  top: 40px; /* Posiciona abaixo do ícone */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 150px;
+}
+
+/* Mostrar o menu quando passar o mouse no ícone */
+.filters .icon:hover .filterOptions {
+  display: block;
+}
+
+/* Estilo dos botões de filtro */
+.filters .filterOptions button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: none;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  text-align: left;
+}
+
+.filters .filterOptions button:hover {
+  background-color: #e0e0e0;
+}
