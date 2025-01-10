@@ -1,35 +1,79 @@
-.navbar-ader{
-    display: flex;
-    align-items: center;
-    height: 90px;
-  }
+.navbarHeader {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 20px;  
+}
 
-  .navbar-menu{
-    display: flex;
-    margin-left: 70px ;
-  }
-  .navbar-menu li {
-    cursor: pointer;
-    padding:5px 20px;
-    list-style: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-    font-size: 25px;
-    color: black;
+.navbarMenu {
+  display: flex;
+  margin-left: 70px;
+}
 
-  }
-  .navbar-menu li:hover{
-    transform:  scaleX(1.05);
-    
-  }
+.navbarMenu li {
+  cursor: pointer;
+  padding: 5px 20px;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  font-size: 20px; 
+  color: black;
+}
 
-  .navbar{
-    background-color: #fff;
-    color: black;
-    display: flexbox;
-    justify-content: space-between;
-  }
+.navbarMenu li:hover {
+  color: black;
+}
 
-  .logo-nav{
-    width: 50px;
-    height: 35px;
-  }
+.navbar {
+  background-color: #fff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.navLink{
+  text-decoration: none;
+}
+
+.logoNav {
+  width: 180px;
+  height: 162px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid black; 
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+  color: white; 
+}
+
+.search input:focus {
+  
+}
+
+.search button {
+  border: none;
+  padding: 10px;
+  margin-left: -5px; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search button:hover {
+}
+
+.search button i {
+  font-size: 20px; 
+}

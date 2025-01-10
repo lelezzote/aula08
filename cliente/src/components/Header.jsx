@@ -1,22 +1,31 @@
-
-import styles from "../styles/header.module.css";
+import React from 'react';
+import styles from '../styles/header.module.css';
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  return(
-    <>
+  return (
     <nav className={styles.navbar}>
-    <div className={styles.navbar-ader}>
-    <ul className={styles.navbar-second}>
-            <img className={styles.logo-nav} src='https://4maos.com.br/wp-content/uploads/2022/06/LOGOS-PARA-BLOG-1300x30003-1-2048x887.png'/>
+      <div className={styles.navbarHeader}>
+        <ul className={styles.navbarSecond}>
+          <img className={styles.logoNav} src='https://img.freepik.com/vetores-premium/design-de-logotipo-de-loja-de-moda-na-cor-marrom-na-ilustracao-vetorial-de-fundo-branco_500223-967.jpg' />
         </ul>
-        <ul className={styles.navbar-menu}>
+        <ul className={styles.navbarMenu}>
+          <li className={styles.navbarLi}>
+            <Link className={styles.navLink} to="/cadastro">
+              Cadastro
+            </Link>
+          </li>
+          <li className={styles.navbarLi}>
+            <Link className={styles.navLink} to="/alterar/:id">
+              Alterar
+            </Link>
+          </li>
         </ul>
-
-       
-    
-    </div>
+        <div className={styles.search}>
+          <input type="text" placeholder="Buscar..." />
+          <button>🔍</button>
+        </div>
+      </div>
     </nav>
-    </>
   );
-  
 }
