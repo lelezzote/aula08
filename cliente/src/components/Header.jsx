@@ -68,7 +68,7 @@ const buscaProdutos = (valor) => {
     <nav className={styles.navbar}>
       <div className={styles.navbarHeader}>
         <ul className={styles.navbarSecond}>
-          <img className={styles.logoNav} src='https://img.freepik.com/vetores-premium/design-de-logotipo-de-loja-de-moda-na-cor-marrom-na-ilustracao-vetorial-de-fundo-branco_500223-967.jpg' />
+          <img className={styles.logoNav} src="/icons/logo.jpeg" />
         </ul>
         <ul className={styles.navbarMenu}>
           <li className={styles.navbarLi}>
@@ -94,7 +94,7 @@ const buscaProdutos = (valor) => {
 
  <div className={styles.filters}>
         <div className={styles.icon}>
-          <span><img src="/icons/icons9-cardápio-50.png"/></span> 
+        <span><img className={styles.menu} src="/icons/icons8-cardápio-50.png"/></span> 
           <div className={styles.filterOptions}>
           <button onClick={() => ordemAz()}>AZ</button>
           <button onClick ={() => ordemZa()}>ZA</button>

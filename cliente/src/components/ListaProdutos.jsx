@@ -16,7 +16,7 @@ export default function ListaProdutos({ produtos, remover }) {
           <p className={styles.produtoInfo}><strong>Composição:</strong> {produto.composicao}</p>
           <p className={styles.produtoInfo}><strong>Cor:</strong> {produto.cor}</p>
           <p className={styles.produtoInfo}><strong>Categoria:</strong> {produto.categoria}</p>
-          <p className={styles.produtoInfo}><strong>Preço:</strong> {produto.preco}</p>
+          <p className={styles.produtoInfo}><strong>Preço:</strong> R$ {produto.preco},00</p>
           <p className={styles.produtoInfo}><strong>Marca:</strong> {produto.marca}</p>
           <div className={styles.buttonGroup}>
             <button className={styles.buttonRemover} onClick={() => remover(produto.id)}>

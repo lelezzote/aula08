@@ -25,11 +25,10 @@
   transform: scale(1.05); 
 }
 
-.produtoTitulo{
-  font-size: .875rem;
-  color: #333; 
-  margin-bottom: 10px; 
-  text-transform: uppercase; 
+.produtoTitulo {
+  font-size: 1rem;
+  color: #333;
+  text-transform: uppercase;
 }
 
 .produtoInfo{
