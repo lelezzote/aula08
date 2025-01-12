@@ -32,12 +32,20 @@ const ordemAz = () => {
  }
  
 //pesquisar
-const buscaProdutos = (valor) => {
-  const busca = valor.toLowerCase();
+const buscaProdutos = () => {
+  const input = document.querySelector(".search input"); // Seleciona o input diretamente
+  const valor = input.value.trim().toLowerCase();
+
+  if (!valor) {
+    setRoupas(roupas); // Mostra todos os produtos quando o campo está vazio
+    return;
+  }
+
   const produtosFiltrados = roupas.filter((produto) =>
-    produto.item.toLowerCase().includes(busca)
+    produto.item.toLowerCase().includes(valor)
   );
-  setRoupas(); 
+
+  setRoupas(produtosFiltrados); // Atualiza a lista de produtos
 };
 
  const exportarPDF = () => {
@@ -68,7 +76,7 @@ const buscaProdutos = (valor) => {
     <nav className={styles.navbar}>
       <div className={styles.navbarHeader}>
         <ul className={styles.navbarSecond}>
-          <img className={styles.logoNav} src="/icons/logo.jpeg" />
+          <img className={styles.logoNav} src="/icons/logoSemFundo.png" />
         </ul>
         <ul className={styles.navbarMenu}>
           <li className={styles.navbarLi}>
@@ -85,7 +93,7 @@ const buscaProdutos = (valor) => {
 
         <div className={styles.search}>
           <input onChange={(event) => buscaProdutos(event.target.value)} type="text" placeholder="Buscar..." />
-          <button>🔍</button>
+          <button onClick={buscaProdutos}>🔍</button>
         </div>
 
         <Button variant="outlined" onClick={() => exportarPDF()}>
