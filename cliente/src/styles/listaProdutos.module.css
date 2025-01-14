@@ -4,21 +4,26 @@
   flex-wrap: wrap;
   color: black;
   font-family: monospace;
+  margin: 0 auto; /* Centraliza o container */
+  max-width: 1200px; /* Define uma largura máxima para o container */
 }
 
 .produtoCard {
   list-style: none;
   padding: 14px;
-  width: 400px;
-  margin-left: 20px;
+  width: 300px; /* Define uma largura fixa para os cards */
+  margin: 20px; /* Adiciona margem para espaçamento entre os cards */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  background-color: #fff; /* Define a cor de fundo dos cards */
 }
 
 .image {
-  width: 87%; 
-  height: 350px; 
+  width: 100%; 
+  height: 200px; /* Ajuste a altura conforme necessário */
   object-fit: cover; 
-  padding: 45px; 
   transition: transform 0.3s;  
+  border-radius: 8px 8px 0 0; /* Ajusta a borda arredondada apenas na parte superior */
 }
 
 .image:hover {
@@ -31,10 +36,8 @@
   text-transform: uppercase;
 }
 
-.produtoInfo{
+.produtoInfo {
   font-size: 12px; 
   margin-bottom: 5px; 
   color: #555; 
 }
-
-

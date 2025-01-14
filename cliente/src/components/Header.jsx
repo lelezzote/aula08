@@ -91,10 +91,17 @@ const buscaProdutos = () => {
           </li>
         </ul>
 
-        <div className={styles.search}>
-          <input onChange={(event) => buscaProdutos(event.target.value)} type="text" placeholder="Buscar..." />
-          <button onClick={buscaProdutos}>🔍</button>
-        </div>
+  <div className={styles.search}>
+  <input 
+    type="text" 
+    placeholder="Buscar..." 
+    onChange={(event) => buscaProdutos(event.target.value)} 
+    id="searchInput" 
+  />
+  <button onClick={() => buscaProdutos(document.getElementById('searchInput').value)}>🔍</button>
+  <ul id="suggestionsList" className={styles.suggestions}></ul>
+</div>
+
 
         <Button variant="outlined" onClick={() => exportarPDF()}>
         Gerar PDF

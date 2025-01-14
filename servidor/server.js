@@ -11,7 +11,7 @@ let roupas = [   {
 
     item: "Camisa",
 
-    imagem: "https://m.media-amazon.com/images/I/61lxy8H1RoL._AC_SX679_.jpg",
+    imagem: "https://http2.mlstatic.com/D_NQ_NP_655604-MLB76453465824_052024-O.webp",
 
     tamanho:["PP-P-M-G-GG-XGG"],
 
@@ -181,7 +181,7 @@ let roupas = [   {
 
   item:"Saia Jeans",
   
-  imagem: "",
+  imagem: "https://img.lojasrenner.com.br/item/843660162/original/12.jpg",
 
   tamanho:["PP-P-M-G-GG-XGG"],
 
