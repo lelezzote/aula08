@@ -2,16 +2,13 @@
   display: flex;
   align-items: center;
   height: 70px;
-  width: 100%; /* Ajusta a largura para 100% da tela */
-  padding: 0 20px;
+  width: 100%; 
+  padding: 0px;
   background-color: rgb(178, 169, 169);
-  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }
 
 .navbarMenu {
   display: flex;
-  flex-grow: 1; /* Permite que a navbarMenu cresça para ocupar o espaço disponível */
-  justify-content: space-around; /* Espaça os itens igualmente */
 }
 
 .navbarMenu li {
@@ -31,9 +28,7 @@
   background-color: #fff;
   color: black;
   display: flex;
-  justify-content: space-between; /* Espaça os itens do início ao fim */
   align-items: center;
-  width: 100%; /* Ajusta a largura para 100% da tela */
 }
 
 .navLink {
@@ -48,23 +43,25 @@
 }
 
 .logoNav {
-  width: 80px; /* Ajusta a largura para um tamanho mais razoável */
-  height: auto; /* Mantém a proporção da altura */
+  width: 80px; 
+  height: auto; 
 }
 
 .menu {
   height: 25px;
   width: 25px;
+  
 }
 
+
 .search {
-  position: relative; /* Adicionado para a lista de sugestões */
+  position: relative; 
   display: flex;
   align-items: stretch; 
-  border-radius: 25px; /* Deixa a barra de pesquisa mais arredondada */
+  border-radius: 25px; 
   overflow: hidden; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-  margin-right: 10px; /* Adiciona margem à direita */
+  margin-right: 10px; 
 }
 
 .search input {
@@ -75,8 +72,8 @@
   outline: none; 
   color: #333;
   height: 100%;
-  border-top-left-radius: 25px; /* Adiciona bordas arredondadas no input */
-  border-bottom-left-radius: 25px; /* Adiciona bordas arredondadas no input */
+  border-top-left-radius: 25px; 
+  border-bottom-left-radius: 25px; 
 }
 
 .search button {
@@ -87,8 +84,8 @@
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease, transform 0.2s ease; 
-  border-top-right-radius: 25px; /* Adiciona bordas arredondadas no botão */
-  border-bottom-right-radius: 25px; /* Adiciona bordas arredondadas no botão */
+  border-top-right-radius: 25px; 
+  border-bottom-right-radius: 25px; 
 }
 
 .search button:hover {
@@ -100,7 +97,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  position: absolute; /* Faz a lista de sugestões aparecer abaixo do input */
+  position: absolute; 
   top: 100%;
   left: 0;
   width: 100%;
@@ -139,7 +136,7 @@
   position: absolute;
   top: 40px; 
   left: auto;
-  right: 0; /* Adiciona alinhamento à direita */
+  right: 0; 
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -167,66 +164,3 @@
   background-color: #e0e0e0;
 }
 
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
-  .navbarHeader {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .navbarMenu {
-    margin-left: 0;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .navbarMenu li {
-    padding: 10px;
-    font-size: 18px;
-  }
-
-  .search {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .filters .icon {
-    padding: 5px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbarHeader {
-    padding: 0 10px;
-  }
-
-  .navbarMenu li {
-    font-size: 16px;
-  }
-
-  .search input {
-    font-size: 14px;
-  }
-
-  .search button {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .filters .icon {
-    font-size: 20px;
-  }
-}
-
-.pdf-button {
-  margin-left: 10px; /* Adiciona margem à esquerda */
-  /* Outros estilos do botão de gerar PDF */
-}

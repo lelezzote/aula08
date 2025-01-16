@@ -13,9 +13,6 @@
   padding: 14px;
   width: 300px; /* Define uma largura fixa para os cards */
   margin: 20px; /* Adiciona margem para espaçamento entre os cards */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
-  border-radius: 8px; /* Adiciona bordas arredondadas */
-  background-color: #fff; /* Define a cor de fundo dos cards */
 }
 
 .image {
