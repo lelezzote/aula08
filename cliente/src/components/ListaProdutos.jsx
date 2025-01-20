@@ -9,8 +9,7 @@ export default function ListaProdutos({ produtos, remover }) {
           <img 
             className={styles.image} 
             src={produto.imagem} 
-            alt={produto.item} 
-          />
+            alt={produto.item}/>
           <h2 className={styles.produtoTitulo}>{produto.item}</h2>
           <p className={styles.produtoInfo}><strong>Tamanho:</strong> {produto.tamanho}</p>
           <p className={styles.produtoInfo}><strong>Composição:</strong> {produto.composicao}</p>
@@ -23,6 +22,9 @@ export default function ListaProdutos({ produtos, remover }) {
               🗑️ Remover
             </button>
           </div>
+          <Link to={'/alterar/' + roupa.id}>
+          <button>Alterar</button>
+          </Link>
         </div>
       ))}
     </div>
