@@ -39,7 +39,7 @@ export default function Registrar() {
          cor,
          categoria,
          preco,
-         marca,
+         marca
         })
       });
       if (resposta.ok) {

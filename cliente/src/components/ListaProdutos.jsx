@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../styles/listaProdutos.module.css';
+import { Link } from "react-router-dom";
 
 export default function ListaProdutos({ produtos, remover }) {
   return (
@@ -19,12 +20,13 @@ export default function ListaProdutos({ produtos, remover }) {
           <p className={styles.produtoInfo}><strong>Marca:</strong> {produto.marca}</p>
           <div className={styles.buttonGroup}>
             <button className={styles.buttonRemover} onClick={() => remover(produto.id)}>
-              🗑️ Remover
+              🗑️ 
             </button>
-          </div>
-          <Link to={'/alterar/' + roupa.id}>
+            <Link to={'/alterar/' + produto.id}>
           <button>Alterar</button>
           </Link>
+          </div>
+          
         </div>
       ))}
     </div>

@@ -239,7 +239,7 @@ app.get('/roupas/:id', (req, res) => {
 
 app.put('/roupas/:id', (req, res) => {
     const { id } = req.params;
-    const { nome, email } = req.body;
+    const { item, imagem, tamanho, composicao, cor, categoria, preco, marca} = req.body;
     
     const roupa = roupas.find(u => u.id === parseInt(id));
     
@@ -256,7 +256,7 @@ app.put('/roupas/:id', (req, res) => {
     roupa.preco = preco || roupa.preco;
     roupa.marca = marca || roupa.marca;
     
-    res.status(200).json(roupa);
+    res.status(200).json(roupas);
 });
 
 app.delete('/roupas/:id', (req, res) => {
