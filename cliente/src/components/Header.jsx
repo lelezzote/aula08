@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../styles/header.module.css';
 import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
 
@@ -79,23 +78,13 @@ const buscaProdutos = () => {
           <img className={styles.logoNav} src="/icons/logoSemFundo.png" />
         </ul>
         <ul className={styles.navbarMenu}>
-        <li className={styles.navbarLi}>
-            <Link className={styles.navLink} to="/">
-              Home
-            </Link>
-          </li>
           <li className={styles.navbarLi}>
             <Link className={styles.navLink} to="/cadastro">
               Cadastro
             </Link>
           </li>
-          <li className={styles.navbarLi}>
-            <Link className={styles.navLink} to="/alterar/:id">
-              Alterar
-            </Link>
-          </li>
         </ul>
-
+  
   <div className={styles.search}>
   <input 
     type="text" 
@@ -108,9 +97,9 @@ const buscaProdutos = () => {
 </div>
 
 
-        <Button className={styles.buttonPDF} variant="outlined" onClick={() => exportarPDF()}>
+        <button className={styles.buttonPDF} variant="outlined" onClick={() => exportarPDF()}>
         Gerar PDF
-      </Button>
+      </button>
 
  <div className={styles.filters}>
         <div className={styles.icon}>

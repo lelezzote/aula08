@@ -5,30 +5,10 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-let roupas = [   {
-
-    id: 1,
-
-    item: "Camisa",
-
-    imagem: "https://http2.mlstatic.com/D_NQ_NP_655604-MLB76453465824_052024-O.webp",
-
-    tamanho:["PP-P-M-G-GG-XGG"],
-
-    composicao:"100% Linho",
-
-    cor: "Branco",
-
-    categoria: "Promoção",
-
-    preco: 999,
-
-    marca: "Palmeira"
-
-},
+let roupas = [  
 
 {
-    id: 2,
+    id: 1,
 
     item: "Cropped",
 
@@ -50,7 +30,7 @@ let roupas = [   {
 
 {
 
-    id: 3,
+    id: 2,
 
     item: "Cropped",
 
@@ -72,7 +52,7 @@ let roupas = [   {
 
 {
 
-    id: 4,
+    id: 3,
 
     item: "Cropped",
 
@@ -93,7 +73,7 @@ let roupas = [   {
 },
 
 {
-    id:5,
+    id:4,
 
     item:"Cropped",
 
@@ -114,7 +94,7 @@ let roupas = [   {
 },
 
 {
-    id:6,
+    id:5,
 
     item:"Short",
 
@@ -135,7 +115,7 @@ let roupas = [   {
 },
 
 {
-  id:7,
+  id:6,
 
   item:"Short",
 
@@ -156,7 +136,7 @@ let roupas = [   {
 },
 
 {
-  id:8,
+  id:7,
 
   item:"Saia",
 
@@ -177,7 +157,7 @@ let roupas = [   {
 },
 
 {
-  id:9,
+  id:8,
 
   item:"Saia Jeans",
   
