@@ -113,7 +113,7 @@
 }
 
 .search button {
-  background-color: #4CAF50;
+  background-color: #ffffff;
   color: white; 
   border: none; 
   padding: 0 20px;
@@ -126,7 +126,7 @@
 }
 
 .search button:hover {
-  background-color: #45a049; 
+  background-color: #158dfd; 
   transform: scale(1.05); 
 }
 

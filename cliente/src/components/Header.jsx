@@ -6,6 +6,7 @@ import "jspdf-autotable";
 
 export default function Header({roupas,  setRoupas}) {
   
+  
 //de A para Z
 const ordemAz = () => {
   const listaOrdenada = [...roupas].sort((a, b) => a.item.localeCompare(b.item));
@@ -32,20 +33,22 @@ const ordemAz = () => {
  
 //pesquisar
 const buscaProdutos = () => {
-  const input = document.getElementById("searchInput"); // Seleciona o input diretamente
-  const valor = input ? input.value.trim().toLowerCase() : ''; // Verifica se o input existe
+  const input = document.getElementById("searchInput"); // Seleciona o input pelo ID
+  const valorBusca = input ? input.value.trim().toLowerCase() : ''; // Obtém o valor do input
 
-  if (!valor) {
-    setRoupas(roupas); // Mostra todos os produtos quando o campo está vazio
+  if (!valorBusca) {
+    setRoupas(roupas); // Restaura a lista original se o campo estiver vazio
     return;
   }
 
   const produtosFiltrados = roupas.filter((produto) =>
-    produto.item.toLowerCase().includes(valor)
+    produto.item.toLowerCase().includes(valorBusca)
   );
 
   setRoupas(produtosFiltrados); // Atualiza a lista de produtos
 };
+
+
 
  const exportarPDF = () => {
     const doc = new jsPDF();
@@ -87,9 +90,15 @@ const buscaProdutos = () => {
     </ul>
 
     <div className={styles.search}>
-      <input type="text" placeholder="Buscar..." className={styles.searchInput} />
-      <button onClick={buscaProdutos}>🔍</button>
-    </div>
+  <input
+    id="searchInput" // Adiciona um ID para acessar o campo de entrada
+    type="text"
+    placeholder="Buscar..."
+    className={styles.searchInput}
+  />
+  <button onClick={buscaProdutos}>🔍</button> {/* Executa a busca ao clicar no botão */}
+</div>
+
 
     <button className={styles.buttonPDF} variant="outlined" onClick={() => exportarPDF()}>Gerar PDF</button>
 
