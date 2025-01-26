@@ -53,3 +53,50 @@
   background-color: #3c6594;
 }
 
+
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 100%; 
+    padding: 15px; 
+  }
+
+  .form {
+    gap: 12px; 
+  }
+
+  .input {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  .button {
+    padding: 10px 15px; 
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+
+  .form {
+    gap: 8px; 
+  }
+
+  .label {
+    font-size: 14px; 
+  }
+
+  .input {
+    font-size: 12px;
+    padding: 6px; 
+  }
+
+  .button {
+    padding: 8px 12px;
+    font-size: 12px; 
+  }
+}

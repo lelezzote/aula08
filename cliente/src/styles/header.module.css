@@ -1,14 +1,21 @@
 .navbarHeader {
   display: flex;
   align-items: center;
+  justify-content: space-between; 
+  padding: 0 20px;
   height: 70px;
-  width: 100%; 
-  padding: 0px;
+  width: 100%;
   background-color: rgb(178, 169, 169);
+}
+
+.navbarSecond {
+  display: flex;
+  align-items: center;
 }
 
 .navbarMenu {
   display: flex;
+  margin-left: 20px; 
 }
 
 .navbarMenu li {
@@ -53,15 +60,44 @@
   
 }
 
+.buttonPDF {
+  margin-right: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonPDF:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.buttonPDF:active {
+  background-color: #003d80;
+  transform: scale(1);
+}
+
+.buttonPDF:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+
 
 .search {
-  position: relative; 
-  display: flex;
-  align-items: stretch; 
+  display: flex; 
   border-radius: 25px; 
   overflow: hidden; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-  margin-right: 10px; 
+  margin-left: auto; 
+  margin-right: 20px; 
+  width: 640px;
 }
 
 .search input {
@@ -86,6 +122,7 @@
   transition: background-color 0.3s ease, transform 0.2s ease; 
   border-top-right-radius: 25px; 
   border-bottom-right-radius: 25px; 
+  width: 90px;
 }
 
 .search button:hover {
@@ -119,7 +156,8 @@
 }
 
 .filters {
-  position: relative; 
+  display: flex;
+  align-items: center; 
 }
 
 .filters .icon {
@@ -162,4 +200,97 @@
 
 .filters .filterOptions button:hover {
   background-color: #e0e0e0;
+}
+
+
+@media (max-width: 768px) {
+  .navbarHeader {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .navbarSecond {
+    margin-bottom: 10px;
+  }
+
+  .navbarMenu {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .navbarMenu li {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .logoNav {
+    width: 60px;
+  }
+
+  .search {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .search input {
+    width: 80%;
+  }
+
+  .search button {
+    width: 50px;
+  }
+
+  .buttonPDF {
+    margin-right: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .filters {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarHeader {
+    padding: 5px;
+  }
+
+  .navbarMenu {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .navbarMenu li {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .search {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .search input {
+    width: 70%;
+  }
+
+  .search button {
+    width: 45px;
+  }
+
+  .buttonPDF {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .filters {
+    justify-content: center;
+    margin-top: 10px;
+  }
 }

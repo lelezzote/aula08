@@ -11,17 +11,21 @@ export default function ListaProdutos({ produtos, remover }) {
             className={styles.image} 
             src={produto.imagem} 
             alt={produto.item}/>
-          <h2 className={styles.produtoTitulo}>{produto.item}</h2>
+          <div className={styles.produtoTituloContainer}>
+             <h2 className={styles.produtoTitulo}>{produto.item}</h2>
+             <span className={styles.produtoPreco}>R$ {produto.preco},00</span>
+          </div>
           <p className={styles.produtoInfo}><strong>Tamanho:</strong> {produto.tamanho}</p>
           <p className={styles.produtoInfo}><strong>Composição:</strong> {produto.composicao}</p>
           <p className={styles.produtoInfo}><strong>Cor:</strong> {produto.cor}</p>
           <p className={styles.produtoInfo}><strong>Categoria:</strong> {produto.categoria}</p>
-          <p className={styles.produtoInfo}><strong>Preço:</strong> R$ {produto.preco},00</p>
           <p className={styles.produtoInfo}><strong>Marca:</strong> {produto.marca}</p>
           <div className={styles.buttonGroup}>
+            
             <button className={styles.buttonRemover} onClick={() => remover(produto.id)}>
               🗑️ 
             </button>
+
             <Link to={'/alterar/' + produto.id}>
           <button>Alterar</button>
           </Link>

@@ -67,52 +67,47 @@ const buscaProdutos = () => {
       body: tabelaDados,
     });
 
-    doc.save("lojaDeRoupas.pdf");
+    doc.save("Rio Modas.pdf");
   };
 
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbarHeader}>
-        <ul className={styles.navbarSecond}>
-          <img className={styles.logoNav} src="/icons/logoSemFundo.png" />
-        </ul>
-        <ul className={styles.navbarMenu}>
-          <li className={styles.navbarLi}>
-            <Link className={styles.navLink} to="/cadastro">
-              Cadastro
-            </Link>
-          </li>
-        </ul>
-  
-  <div className={styles.search}>
-  <input 
-    type="text" 
-    placeholder="Buscar..." 
-    
-    id="searchInput" 
-  />
-  <button onClick={buscaProdutos}>🔍</button>
-  
-</div>
+  <div className={styles.navbarHeader}>
+    <ul className={styles.navbarSecond}>
+      <img className={styles.logoNav} src="/icons/logoSemFundo.png" alt="Logo" />
+    </ul>
 
+    <ul className={styles.navbarMenu}>
+      <li>
+        <Link className={styles.navLink} to="/cadastro">
+          Cadastro
+        </Link>
+      </li>
+    </ul>
 
-        <button className={styles.buttonPDF} variant="outlined" onClick={() => exportarPDF()}>
-        Gerar PDF
-      </button>
+    <div className={styles.search}>
+      <input type="text" placeholder="Buscar..." className={styles.searchInput} />
+      <button onClick={buscaProdutos}>🔍</button>
+    </div>
 
- <div className={styles.filters}>
-        <div className={styles.icon}>
-        <span><img className={styles.menu} src="/icons/icons8-cardápio-50.png"/></span> 
-          <div className={styles.filterOptions}>
+    <button className={styles.buttonPDF} variant="outlined" onClick={() => exportarPDF()}>Gerar PDF</button>
+
+    <div className={styles.filters}>
+      <div className={styles.icon}>
+        <span>
+          <img className={styles.menu} src="/icons/icons8-cardápio-50.png"/>
+        </span>
+        <div className={styles.filterOptions}>
           <button onClick={() => ordemAz()}>AZ</button>
-          <button onClick ={() => ordemZa()}>ZA</button>
-          <button onClick ={() => precoDescrescente()}>Descrecente</button>
-          <button onClick ={() => precoCrescente()}>Crescente</button>
-          </div>
+          <button onClick={() => ordemZa()}>ZA</button>
+          <button onClick={() => precoDescrescente()}>Decrescente</button>
+          <button onClick={() => precoCrescente()}>Crescente</button>
         </div>
       </div>
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
   );
 }
