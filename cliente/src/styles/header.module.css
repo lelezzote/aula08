@@ -5,7 +5,7 @@
   padding: 0 20px;
   height: 70px;
   width: 100%;
-  background-color: rgb(178, 169, 169);
+  background-color: rgb(198, 191, 191);
 }
 
 .navbarSecond {
@@ -65,7 +65,7 @@
   padding: 12px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #3467ab;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -74,18 +74,18 @@
 }
 
 .buttonPDF:hover {
-  background-color: #0056b3;
+  background-color: #093166;
   transform: scale(1.05);
 }
 
 .buttonPDF:active {
-  background-color: #003d80;
+  background-color: #447eb7;
   transform: scale(1);
 }
 
 .buttonPDF:focus {
   outline: none;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 8px rgba(8, 74, 149, 0.5);
 }
 
 

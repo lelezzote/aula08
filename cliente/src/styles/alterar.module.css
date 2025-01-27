@@ -3,9 +3,8 @@
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgb(138, 205, 236);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.0);
   }
   
   .form {
@@ -34,7 +33,7 @@
   }
   
   .input:focus {
-    border-color: #007bff;
+    border-color: #000000;
     outline: none;
   }
   
@@ -42,7 +41,7 @@
     padding: 12px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #133c68;
+    background-color: #2b2e32;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -50,7 +49,7 @@
   }
   
   .button:hover {
-    background-color: #3c6594;
+    background-color: #5e646c;
   }
   
   
